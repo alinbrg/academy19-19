@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>form page</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form action="/user" method="get" novalidate>
+				<div class="form-row">
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="enter your email"
+						required
+					/>
+					<label for="email"> enter your email </label>
+					<span class="error-message" id="email-error-message"></span>
+				</div>
+				<div class="form-row">
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="enter password"
+						minlength="8"
+						required
+					/>
+					<label for="password"> enter password </label>
+					<span class="error-message"></span>
+				</div>
+				<button type="submit" class="button submit-form">submit form</button>
+			</form>
+		</div>
+
+		<div class="container">
+			<button class="button" id="open-modal">open modal</button>
+		</div>
+
+		<div class="modal" id="sign-in-success-modal">
+			<div class="modal-content">
+				<button class="close">X</button>
+
+				<p class="modal-message"></p>
+			</div>
+		</div>
+		<script src="src/js/form.js"></script>
+	</body>
+</html>
