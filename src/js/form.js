@@ -17,6 +17,7 @@ openModalBtn.addEventListener("click", () => {
 modal.addEventListener("click", (e) => {
 	console.log(e.target);
 
+	// მოდალის ელემენტზე (ნაცრისფერ ბლოკზე) კლიკი როცა ხდება, დავხუროთ მოდალი
 	if (e.target === modal) {
 		modal.classList.remove("active-modal");
 	}
